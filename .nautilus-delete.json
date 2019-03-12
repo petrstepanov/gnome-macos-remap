@@ -1,0 +1,31 @@
+{
+    "usageCount": 2, 
+    "omitTrigger": false, 
+    "prompt": false, 
+    "description": "nautilus-delete", 
+    "abbreviation": {
+        "wordChars": "[\\w]", 
+        "abbreviations": [], 
+        "immediate": false, 
+        "ignoreCase": false, 
+        "backspace": true, 
+        "triggerInside": false
+    }, 
+    "hotkey": {
+        "hotKey": "<backspace>", 
+        "modifiers": [
+            "<hyper>"
+        ]
+    }, 
+    "modes": [
+        3
+    ], 
+    "showInTrayMenu": false, 
+    "matchCase": false, 
+    "filter": {
+        "regex": "nautilus.Nautilus", 
+        "isRecursive": false
+    }, 
+    "type": "phrase", 
+    "sendMode": "kb"
+}
