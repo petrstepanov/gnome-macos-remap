@@ -14,7 +14,7 @@
     "hotkey": {
         "hotKey": "x", 
         "modifiers": [
-            "<super>"
+            "<ctrl>"
         ]
     }, 
     "modes": [
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "autokey-gtk.Autokey-gtk", 
+        "regex": "gnome-terminal-server.Gnome-terminal", 
         "isRecursive": false
     }, 
     "type": "phrase", 

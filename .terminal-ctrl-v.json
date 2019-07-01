@@ -1,8 +1,8 @@
 {
-    "usageCount": 1, 
+    "usageCount": 3, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "terminal-ctrl-c", 
+    "description": "terminal-ctrl-v", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,9 +12,9 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "c", 
+        "hotKey": "v", 
         "modifiers": [
-            "<super>"
+            "<ctrl>"
         ]
     }, 
     "modes": [
