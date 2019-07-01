@@ -14,7 +14,7 @@
     "hotkey": {
         "hotKey": "<left>", 
         "modifiers": [
-            "<hyper>"
+            "<ctrl>"
         ]
     }, 
     "modes": [

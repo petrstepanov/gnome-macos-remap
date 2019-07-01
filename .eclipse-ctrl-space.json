@@ -1,8 +1,8 @@
 {
-    "usageCount": 0, 
+    "usageCount": 2, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "nautilus-delete", 
+    "description": "eclipse-ctrl-space", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,9 +12,9 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<backspace>", 
+        "hotKey": " ", 
         "modifiers": [
-            "<ctrl>"
+            "<super>"
         ]
     }, 
     "modes": [
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "nautilus.Nautilus", 
+        "regex": "Eclipse.Eclipse", 
         "isRecursive": false
     }, 
     "type": "phrase", 

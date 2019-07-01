@@ -1,8 +1,8 @@
 {
-    "usageCount": 0, 
+    "usageCount": 59, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "nautilus-delete", 
+    "description": "switch-win-same-app", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,7 +12,7 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<backspace>", 
+        "hotKey": "`", 
         "modifiers": [
             "<ctrl>"
         ]
@@ -21,11 +21,10 @@
         3
     ], 
     "showInTrayMenu": false, 
-    "matchCase": false, 
     "filter": {
-        "regex": "nautilus.Nautilus", 
+        "regex": null, 
         "isRecursive": false
     }, 
-    "type": "phrase", 
-    "sendMode": "kb"
+    "type": "script", 
+    "store": {}
 }

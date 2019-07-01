@@ -2,7 +2,7 @@
     "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "nautilus-delete", 
+    "description": "home-select", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,9 +12,10 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<backspace>", 
+        "hotKey": "<left>", 
         "modifiers": [
-            "<ctrl>"
+            "<ctrl>", 
+            "<shift>"
         ]
     }, 
     "modes": [
@@ -23,7 +24,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "nautilus.Nautilus", 
+        "regex": null, 
         "isRecursive": false
     }, 
     "type": "phrase", 

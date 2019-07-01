@@ -1,5 +1,5 @@
 {
-    "usageCount": 0, 
+    "usageCount": 6, 
     "omitTrigger": false, 
     "prompt": false, 
     "description": "nautilus-up", 
@@ -14,7 +14,7 @@
     "hotkey": {
         "hotKey": "<up>", 
         "modifiers": [
-            "<hyper>"
+            "<ctrl>"
         ]
     }, 
     "modes": [

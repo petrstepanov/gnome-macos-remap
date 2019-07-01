@@ -2,7 +2,7 @@
     "usageCount": 0, 
     "omitTrigger": false, 
     "prompt": false, 
-    "description": "nautilus-delete-2", 
+    "description": "terminal-ctrl-x", 
     "abbreviation": {
         "wordChars": "[\\w]", 
         "abbreviations": [], 
@@ -12,7 +12,7 @@
         "triggerInside": false
     }, 
     "hotkey": {
-        "hotKey": "<backspace>", 
+        "hotKey": "x", 
         "modifiers": [
             "<super>"
         ]
@@ -23,7 +23,7 @@
     "showInTrayMenu": false, 
     "matchCase": false, 
     "filter": {
-        "regex": "nautilus.Nautilus", 
+        "regex": "autokey-gtk.Autokey-gtk", 
         "isRecursive": false
     }, 
     "type": "phrase", 
