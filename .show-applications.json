@@ -1,13 +1,13 @@
 {
-    "type": "phrase",
-    "description": "nautilus-delete",
+    "type": "script",
+    "description": "show-applications",
+    "store": {},
     "modes": [
         3
     ],
     "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
-    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -18,14 +18,11 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [
-            "<ctrl>"
-        ],
-        "hotKey": "<backspace>"
+        "modifiers": [],
+        "hotKey": "<code212>"
     },
     "filter": {
         "regex": null,
         "isRecursive": false
-    },
-    "sendMode": "kb"
+    }
 }
