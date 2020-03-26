@@ -1,13 +1,13 @@
 {
-    "type": "script",
-    "description": "show-applications",
-    "store": {},
+    "type": "phrase",
+    "description": "terminal-ctrl-c",
     "modes": [
         3
     ],
-    "usageCount": 7,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
+    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -18,11 +18,14 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [],
-        "hotKey": "<code212>"
+        "modifiers": [
+            "<ctrl>"
+        ],
+        "hotKey": "c"
     },
     "filter": {
-        "regex": null,
+        "regex": "gnome-terminal-server.Gnome-terminal",
         "isRecursive": false
-    }
+    },
+    "sendMode": "kb"
 }

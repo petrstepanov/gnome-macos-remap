@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "show-applications",
+    "description": "screenshot-interactive",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 7,
+    "usageCount": 1,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -18,8 +18,11 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [],
-        "hotKey": "<code212>"
+        "modifiers": [
+            "<ctrl>",
+            "<shift>"
+        ],
+        "hotKey": "4"
     },
     "filter": {
         "regex": null,
