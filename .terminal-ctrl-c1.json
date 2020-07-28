@@ -1,6 +1,6 @@
 {
     "type": "phrase",
-    "description": "terminal-ctrl-v",
+    "description": "terminal-ctrl-c",
     "modes": [
         3
     ],
@@ -19,9 +19,9 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>"
+            "<super>"
         ],
-        "hotKey": "v"
+        "hotKey": "c"
     },
     "filter": {
         "regex": "gnome-terminal-server.Gnome-terminal",

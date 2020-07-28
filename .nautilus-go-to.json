@@ -1,6 +1,6 @@
 {
     "type": "phrase",
-    "description": "terminal-ctrl-c",
+    "description": "nautilus-go-to",
     "modes": [
         3
     ],
@@ -19,12 +19,13 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>"
+            "<ctrl>",
+            "<shift>"
         ],
-        "hotKey": "c"
+        "hotKey": "g"
     },
     "filter": {
-        "regex": "gnome-terminal-server.Gnome-terminal",
+        "regex": null,
         "isRecursive": false
     },
     "sendMode": "kb"

@@ -1,13 +1,13 @@
 {
-    "type": "script",
-    "description": "show-activities",
-    "store": {},
+    "type": "phrase",
+    "description": "terminal-copy",
     "modes": [
         3
     ],
-    "usageCount": 35,
+    "usageCount": 4,
     "prompt": false,
     "omitTrigger": false,
+    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -18,11 +18,14 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [],
-        "hotKey": "<code128>"
+        "modifiers": [
+            "<ctrl>"
+        ],
+        "hotKey": "c"
     },
     "filter": {
-        "regex": null,
+        "regex": "gnome-terminal-server.Gnome-terminal",
         "isRecursive": false
-    }
+    },
+    "sendMode": "kb"
 }

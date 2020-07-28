@@ -1,11 +1,9 @@
 {
     "type": "script",
-    "description": "show-activities",
+    "description": "New Script",
     "store": {},
-    "modes": [
-        3
-    ],
-    "usageCount": 35,
+    "modes": [],
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
@@ -19,7 +17,7 @@
     },
     "hotkey": {
         "modifiers": [],
-        "hotKey": "<code128>"
+        "hotKey": null
     },
     "filter": {
         "regex": null,
