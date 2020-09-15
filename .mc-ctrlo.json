@@ -1,13 +1,13 @@
 {
-    "type": "script",
-    "description": "screenshot-interactive",
-    "store": {},
+    "type": "phrase",
+    "description": "mc-ctrl+o",
     "modes": [
         3
     ],
-    "usageCount": 1,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
+    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -19,13 +19,13 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>",
-            "<shift>"
+            "<super>"
         ],
-        "hotKey": "4"
+        "hotKey": "o"
     },
     "filter": {
         "regex": null,
         "isRecursive": false
-    }
+    },
+    "sendMode": "kb"
 }

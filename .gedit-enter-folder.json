@@ -1,10 +1,8 @@
 {
     "type": "phrase",
-    "description": "eclipse-ctrl-space",
-    "modes": [
-        3
-    ],
-    "usageCount": 30,
+    "description": "gedit-enter-folder",
+    "modes": [],
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -18,10 +16,8 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [
-            "<super>"
-        ],
-        "hotKey": " "
+        "modifiers": [],
+        "hotKey": null
     },
     "filter": {
         "regex": null,

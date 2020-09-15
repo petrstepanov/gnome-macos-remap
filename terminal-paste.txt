@@ -1,1 +1,1 @@
-<ctrl>+<shift>+v
+<shift>+<insert>

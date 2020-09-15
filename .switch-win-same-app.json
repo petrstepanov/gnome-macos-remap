@@ -2,10 +2,8 @@
     "type": "script",
     "description": "switch-win-same-app",
     "store": {},
-    "modes": [
-        3
-    ],
-    "usageCount": 87,
+    "modes": [],
+    "usageCount": 131,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
