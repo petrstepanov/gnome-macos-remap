@@ -1,6 +1,6 @@
 {
     "type": "phrase",
-    "description": "terminal-new-tab",
+    "description": "micro-paste",
     "modes": [
         3
     ],
@@ -21,10 +21,10 @@
         "modifiers": [
             "<ctrl>"
         ],
-        "hotKey": "t"
+        "hotKey": "v"
     },
     "filter": {
-        "regex": "gnome-terminal-server.Gnome-terminal",
+        "regex": ".*micro",
         "isRecursive": false
     },
     "sendMode": "kb"

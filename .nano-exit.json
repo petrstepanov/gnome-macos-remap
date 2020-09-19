@@ -1,9 +1,7 @@
 {
     "type": "phrase",
-    "description": "terminal-ctrl-c",
-    "modes": [
-        3
-    ],
+    "description": "nano-exit",
+    "modes": [],
     "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
@@ -21,7 +19,7 @@
         "modifiers": [
             "<super>"
         ],
-        "hotKey": "c"
+        "hotKey": "x"
     },
     "filter": {
         "regex": "gnome-terminal-server.Gnome-terminal",

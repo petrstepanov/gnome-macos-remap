@@ -1,10 +1,10 @@
 {
     "type": "phrase",
-    "description": "terminal-paste",
+    "description": "terminal-interrupt",
     "modes": [
         3
     ],
-    "usageCount": 11,
+    "usageCount": 6,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -19,12 +19,12 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>"
+            "<super>"
         ],
-        "hotKey": "v"
+        "hotKey": "c"
     },
     "filter": {
-        "regex": "^petrstepanov((?!micro).)*$",
+        "regex": "gnome-terminal-server.Gnome-terminal",
         "isRecursive": false
     },
     "sendMode": "kb"

@@ -1,6 +1,6 @@
 {
     "type": "phrase",
-    "description": "terminal-ctrl-x",
+    "description": "micro-copy",
     "modes": [
         3
     ],
@@ -19,12 +19,12 @@
     },
     "hotkey": {
         "modifiers": [
-            "<super>"
+            "<ctrl>"
         ],
-        "hotKey": "x"
+        "hotKey": "c"
     },
     "filter": {
-        "regex": "gnome-terminal-server.Gnome-terminal",
+        "regex": ".*micro",
         "isRecursive": false
     },
     "sendMode": "kb"
