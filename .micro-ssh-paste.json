@@ -1,10 +1,10 @@
 {
     "type": "phrase",
-    "description": "terminal-interrupt",
+    "description": "micro-ssh-paste",
     "modes": [
         3
     ],
-    "usageCount": 6,
+    "usageCount": 4,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -19,12 +19,12 @@
     },
     "hotkey": {
         "modifiers": [
-            "<super>"
+            "<ctrl>"
         ],
-        "hotKey": "c"
+        "hotKey": "v"
     },
     "filter": {
-        "regex": "gnome-terminal-server.Gnome-terminal",
+        "regex": ".*ssh",
         "isRecursive": false
     },
     "sendMode": "kb"

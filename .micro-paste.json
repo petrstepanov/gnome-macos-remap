@@ -1,9 +1,7 @@
 {
     "type": "phrase",
     "description": "micro-paste",
-    "modes": [
-        3
-    ],
+    "modes": [],
     "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
