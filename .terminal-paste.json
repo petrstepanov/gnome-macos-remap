@@ -4,7 +4,7 @@
     "modes": [
         3
     ],
-    "usageCount": 20,
+    "usageCount": 27,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -24,7 +24,7 @@
         "hotKey": "v"
     },
     "filter": {
-        "regex": "^petrstepanov((?!(micro|ssh)).)*$",
+        "regex": "gnome-terminal-server.Gnome-terminal",
         "isRecursive": false
     },
     "sendMode": "kb"
