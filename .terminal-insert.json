@@ -1,10 +1,10 @@
 {
     "type": "phrase",
-    "description": "mc-ctrl+o",
+    "description": "terminal-insert",
     "modes": [
         3
     ],
-    "usageCount": 0,
+    "usageCount": 76,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -19,12 +19,12 @@
     },
     "hotkey": {
         "modifiers": [
-            "<super>"
+            "<ctrl>"
         ],
-        "hotKey": "o"
+        "hotKey": "c"
     },
     "filter": {
-        "regex": null,
+        "regex": "gnome-terminal-server.Gnome-terminal",
         "isRecursive": false
     },
     "sendMode": "kb"
