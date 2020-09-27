@@ -13,13 +13,13 @@ The functionality is based on the Autokey mechanism. On top of that the default 
 In order to run the script one has to have `autokey` and `git` installed on the system. Please install these packages first with the package manager provided by your OS.
 
 ## Installation
-Check out the repository to an arbitrary location and run the `install.sh` script. Script will ask for administrator password.
+Check out the repository to an arbitrary location and run the `install.sh` script in Terminal. Script will ask for administrator password.
 
 ```
-https://github.com/petrstepanov/gnome-macos-remap
+git clone https://github.com/petrstepanov/gnome-macos-remap
 cd gnome-macos-remap
 sh install.sh
 ```
 
 ## How to uninstall
-Uninstall script is in progress.
+Navigate into the program directory in Terminal and run `uninstall.sh`.
