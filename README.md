@@ -21,5 +21,8 @@ cd gnome-macos-remap
 sh install.sh
 ```
 
+Open AutoKey preferences and make sure the "Automatically start AutoKey at login" checkbox is on. 
+System restart is required in order for the remap to start working.
+
 ## How to uninstall
 Navigate into the program directory in Terminal and run `uninstall.sh`.
