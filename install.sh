@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # Flip Control and Command (Super) keyboard keys
 sudo cp /usr/share/X11/xkb/symbols/pc /usr/share/X11/xkb/symbols/pc.bak

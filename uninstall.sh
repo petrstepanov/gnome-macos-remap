@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 # FRevert the default Control and Command behaviour
 sudo cp /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
