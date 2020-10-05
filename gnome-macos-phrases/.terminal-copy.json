@@ -1,8 +1,10 @@
 {
     "type": "phrase",
     "description": "terminal-copy",
-    "modes": [],
-    "usageCount": 0,
+    "modes": [
+        3
+    ],
+    "usageCount": 65,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
