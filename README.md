@@ -11,7 +11,7 @@ A bash script that remaps GNOME desktop keybindings to MacOS defaults. Very usef
 * Home and End keys defined to be `⌘ ←` and `⌘ →`.
 * Workspace switching with `Ctrl ←` and `Ctrl →`.
 * macOS window manager keyboard shortcuts: `⌘ ~`, `⌘ w`.
-* Mission Contol <code><img src="https://help.apple.com/assets/5E59C74D0946226F03EEDC17/5E59C7520946226F03EEDC2C/en_US/0a3719d8c9acde3a43680efa67ef11a2.png" alt="the Mission Control key" height="16px"></code> and Launchpad <code><img src="https://help.apple.com/assets/5E59C74D0946226F03EEDC17/5E59C7520946226F03EEDC2C/en_US/d6924e805b6d1a255218f1307a96ef25.png" alt="the Launchpad key" height="16px"/></code> media keys are remapped.
+* Mission Contol <img src="https://help.apple.com/assets/5E59C74D0946226F03EEDC17/5E59C7520946226F03EEDC2C/en_US/0a3719d8c9acde3a43680efa67ef11a2.png" alt="the Mission Control key" height="16px"> and Launchpad <img src="https://help.apple.com/assets/5E59C74D0946226F03EEDC17/5E59C7520946226F03EEDC2C/en_US/d6924e805b6d1a255218f1307a96ef25.png" alt="the Launchpad key" height="16px"/> media keys are remapped.
 * And more...
 
 ## How does it work?
