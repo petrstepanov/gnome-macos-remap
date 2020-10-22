@@ -9,7 +9,7 @@ A bash script that remaps GNOME desktop keybindings to MacOS defaults. Very usef
 * Finder key combinations work in Nautilus.
 * Copy and Paste work in Terminal with `⌘ c`, `⌘ v`.
 * Home and End keys defined to be `⌘ ←` and `⌘ →`.
-* macOS window manager keyboard shortcuts: `⌘ `, `⌘ w`.
+* macOS window manager keyboard shortcuts: ``⌘ ```, `⌘ w`.
 * Mission Contol and All Applications media keys are remapped.
 * And more...
 
