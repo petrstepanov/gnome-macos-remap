@@ -10,7 +10,7 @@ A bash script that remaps GNOME desktop keybindings to MacOS defaults. Very usef
 * Copy and Paste work in Terminal with `⌘ c`, `⌘ v`.
 * Home and End keys defined to be `⌘ ←` and `⌘ →`.
 * Workspace switching with `Ctrl ←` and `Ctrl →`.
-* macOS window manager keyboard shortcuts: ``⌘ ```, `⌘ w`.
+* macOS window manager keyboard shortcuts: `⌘ ~`, `⌘ w`.
 * Mission Contol and All Applications media keys are remapped.
 * And more...
 
