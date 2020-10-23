@@ -35,5 +35,8 @@ sh install.sh
 Open AutoKey preferences and make sure the "Automatically start AutoKey at login" checkbox is on. 
 System restart is required in order for the remap to start working.
 
+## Postinstall tips
+To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
+
 ## How to uninstall
 Navigate into the program directory in Terminal and run `uninstall.sh`.
