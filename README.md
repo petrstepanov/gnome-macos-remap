@@ -18,8 +18,10 @@ Migrating to Linux from a Mac? This bash script remaps GNOME desktop keybindings
 ## How does it work?
 The functionality is based on the Autokey mechanism. On top of that the default GNOME shell keybindings are modified as well. Therefore it will only work in X11 window system. Wayland is not supported.
 
-## Install Prerequisities
-In order to run the script one has to have `autokey` and `git` installed on the system. Please install these packages first with the package manager provided by your OS.
+## Prerequisities
+Make sure you are using X11, not Wayland. Logout from your session. On the GNOME login screen find and click gear icon. Select option "GNOME on Xorg". Log back in.
+
+Install `autokey` and `git` packages with the package manager of your chioce.
 
 ## Installation
 Check out the repository to an arbitrary location and run the `install.sh` script in Terminal. Script will ask for administrator password.
