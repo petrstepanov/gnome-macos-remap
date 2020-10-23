@@ -4,9 +4,9 @@
   <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
 </figure>
 
-A bash script that remaps GNOME desktop keybindings to MacOS defaults. Very useful keyboard remap for users who run linux on Macbook laptops or computers with Apple keyboard. Or for those who simply prefer a MacOS keyboard over the regular PC keyboard. Here are some key remaps that are implemented:
+Migrating to Linux from a Mac? This bash script remaps GNOME desktop keybindings to MacOS defaults. Very useful keyboard remap for users who run linux on Macbook laptops or computers with Apple keyboard. Or for those who simply prefer a MacOS keyboard over the regular PC keyboard. Here are some key remaps that are implemented:
 
-* Command key `⌘` set as main syatem modifier key.
+* Command key `⌘` set as main system modifier key.
 * Copy and Paste work in Terminal with `⌘ c`, `⌘ v`. Regular interrupt `ctrl c` works in Terminal.
 * Nautilus keyboard hotkeys replaced with the Finder ones.
 * Home and End keys assigned to macOS defaults `⌘ ←` and `⌘ →`.
