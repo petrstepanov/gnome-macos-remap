@@ -4,14 +4,14 @@
   <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
 </figure>
 
-Migrating to Linux from a Mac? This bash script remaps GNOME desktop keybindings to MacOS defaults. Very useful keyboard remap for users who run linux on Macbook laptops or computers with Apple keyboard. Or for those who simply prefer a MacOS keyboard over the regular PC keyboard. Here are some key remaps that are implemented:
+Migrating to Linux from a Mac? This bash script remaps native GNOME desktop environment keybindings to the macOS defaults. Very useful keyboard remap for Linux users who are running GNOME on a Macbook or a PC with Apple keyboard. Don't spend time getting used to the default GNOME keybindings. Run the script and use your Linux just like you do use your Mac. Here are some key remaps that are implemented:
 
 * Command key `⌘` set as main system modifier key.
 * Copy and Paste work in Terminal with `⌘ c`, `⌘ v`. Regular interrupt `ctrl c` works in Terminal.
-* Nautilus keyboard hotkeys replaced with the Finder ones.
+* Nautilus keyboard hotkeys replaced with the Finder ones: navigate in and out of folder, delete folder, new folder...
 * Home and End keys assigned to macOS defaults `⌘ ←` and `⌘ →`.
 * Workspace switching works with `Ctrl ←` and `Ctrl →`.
-* macOS window manager keyboard shortcuts are implemented: `⌘ tab`, `⌘ ~`, `⌘ w`.
+* Some macOS window manager keyboard shortcuts are implemented: application switcher `⌘ tab`, `⌘ ~`, close window `⌘ w`.
 * Mission Contol <img src="https://help.apple.com/assets/5E59C74D0946226F03EEDC17/5E59C7520946226F03EEDC2C/en_US/0a3719d8c9acde3a43680efa67ef11a2.png" alt="the Mission Control key" height="16px"> and Launchpad <img src="https://help.apple.com/assets/5E59C74D0946226F03EEDC17/5E59C7520946226F03EEDC2C/en_US/d6924e805b6d1a255218f1307a96ef25.png" alt="the Launchpad key" height="16px"/> media keys are remapped.
 * And more...
 
