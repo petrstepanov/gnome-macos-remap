@@ -40,3 +40,6 @@ To get a functionality similar to the macOS Spotlight, I recommend installing th
 
 ## How to uninstall
 Navigate into the program directory in Terminal and run `uninstall.sh`.
+
+## Rodmap
+Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
