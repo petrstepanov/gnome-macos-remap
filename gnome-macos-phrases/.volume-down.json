@@ -1,13 +1,13 @@
 {
-    "type": "phrase",
-    "description": "next-word",
+    "type": "script",
+    "description": "volume-down",
+    "store": {},
     "modes": [
         3
     ],
     "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
-    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -18,14 +18,11 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [
-            "<alt>"
-        ],
-        "hotKey": "<right>"
+        "modifiers": [],
+        "hotKey": "<code193>"
     },
     "filter": {
         "regex": null,
         "isRecursive": false
-    },
-    "sendMode": "kb"
+    }
 }
