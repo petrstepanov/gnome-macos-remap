@@ -1,11 +1,11 @@
 {
     "type": "script",
-    "description": "volume-mute",
+    "description": "volume-toggle",
     "store": {},
     "modes": [
         3
     ],
-    "usageCount": 3,
+    "usageCount": 23,
     "prompt": false,
     "omitTrigger": false,
     "showInTrayMenu": false,
