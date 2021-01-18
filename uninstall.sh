@@ -37,5 +37,3 @@ gsettings reset org.gnome.terminal.legacy.keybindings new-window
 gsettings reset org.gnome.terminal.legacy.keybindings close-tab
 gsettings reset org.gnome.terminal.legacy.keybindings close-window
 gsettings reset org.gnome.terminal.legacy.keybindings find
-gsettings reset org.gnome.terminal.legacy.keybindings next-tab
-gsettings reset org.gnome.terminal.legacy.keybindings prev-tab
