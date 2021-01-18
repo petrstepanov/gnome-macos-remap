@@ -39,3 +39,5 @@ gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
 
 gsettings set org.gnome.terminal.legacy.keybindings new-tab "['<Primary>t']"
 gsettings set org.gnome.terminal.legacy.keybindings new-window "['<Primary>n']"
+gsettings set org.gnome.terminal.legacy.keybindings close-tab "['<Primary>w']"
+gsettings set org.gnome.terminal.legacy.keybindings close-window "['<Primary>q']"
