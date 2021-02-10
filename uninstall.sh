@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Revert the default Control and Command behaviour
+# Force move backup mapping file to original
 sudo mv -f /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
 
 # Uninstall Autokey repository
