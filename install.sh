@@ -48,4 +48,4 @@ gsettings set org.gnome.Terminal.Legacy.Keybindings close-window "['<Primary>q']
 gsettings set org.gnome.Terminal.Legacy.Keybindings find "['<Primary>f']"
 
 # Disable Left Super Overlay Shortcut
-gsettings set org.gnome.mutter overlay-key "['Super_R']"
+gsettings set org.gnome.mutter overlay-key 'Super_R'
