@@ -1,14 +1,14 @@
 {
-    "type": "phrase",
-    "description": "eclipse-context-assist",
+    "type": "script",
+    "description": "volume-up",
+    "store": {},
     "modes": [
         3
     ],
-    "usageCount": 215,
+    "usageCount": 91,
     "prompt": false,
     "omitTrigger": false,
-    "matchCase": false,
-    "showInTrayMenu": true,
+    "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
         "backspace": true,
@@ -18,14 +18,11 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [
-            "<super>"
-        ],
-        "hotKey": " "
+        "modifiers": [],
+        "hotKey": "<code194>"
     },
     "filter": {
         "regex": null,
         "isRecursive": false
-    },
-    "sendMode": "kb"
+    }
 }
