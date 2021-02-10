@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Revert the default Control and Command behaviour
-sudo cp /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
+sudo mv -f /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
 
 # Uninstall Autokey repository
 rm -rf ~/.config/autokey/data/gnome-macos-phrases
