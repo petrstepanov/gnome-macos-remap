@@ -6,7 +6,7 @@ sudo cp /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
 # Uninstall Autokey repository
 rm -rf ~/.config/autokey/data/gnome-macos-phrases
 
-# Tweak standard GNOME keybindings
+# Revert standard GNOME keybindings
 gsettings reset org.gnome.desktop.wm.keybindings activate-window-menu
 gsettings reset org.gnome.desktop.wm.keybindings close
 gsettings reset org.gnome.desktop.wm.keybindings panel-main-menu
@@ -37,3 +37,6 @@ gsettings reset org.gnome.terminal.legacy.keybindings new-window
 gsettings reset org.gnome.terminal.legacy.keybindings close-tab
 gsettings reset org.gnome.terminal.legacy.keybindings close-window
 gsettings reset org.gnome.terminal.legacy.keybindings find
+
+# Revert Left Super Overlay Shortcut
+gsettings set org.gnome.mutter overlay-key "['Super_R']"
