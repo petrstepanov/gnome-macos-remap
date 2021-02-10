@@ -39,4 +39,4 @@ gsettings reset org.gnome.terminal.legacy.keybindings close-window
 gsettings reset org.gnome.terminal.legacy.keybindings find
 
 # Revert Left Super Overlay Shortcut
-gsettings set org.gnome.mutter overlay-key "['Super_R']"
+gsettings reset org.gnome.mutter overlay-key
