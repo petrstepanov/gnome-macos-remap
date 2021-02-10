@@ -36,3 +36,12 @@ gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "[]"
 gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot "['<Primary><Shift>numbersign']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['<Primary><Shift>dollar']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
+
+gsettings set org.gnome.terminal.legacy.keybindings new-tab "['<Primary>t']"
+gsettings set org.gnome.terminal.legacy.keybindings new-window "['<Primary>n']"
+gsettings set org.gnome.terminal.legacy.keybindings close-tab "['<Primary>w']"
+gsettings set org.gnome.terminal.legacy.keybindings close-window "['<Primary>q']"
+gsettings set org.gnome.terminal.legacy.keybindings find "['<Primary>f']"
+
+# Disable Left Super Overlay Shortcut
+gsettings set org.gnome.mutter overlay-key "['Super_R']"

@@ -31,3 +31,12 @@ gsettings reset org.gnome.mutter.wayland.keybindings restore-shortcuts
 gsettings reset org.gnome.settings-daemon.plugins.media-keys window-screenshot
 gsettings reset org.gnome.settings-daemon.plugins.media-keys area-screenshot
 gsettings reset org.gnome.settings-daemon.plugins.media-keys screensaver
+
+gsettings reset org.gnome.terminal.legacy.keybindings new-tab
+gsettings reset org.gnome.terminal.legacy.keybindings new-window
+gsettings reset org.gnome.terminal.legacy.keybindings close-tab
+gsettings reset org.gnome.terminal.legacy.keybindings close-window
+gsettings reset org.gnome.terminal.legacy.keybindings find
+
+# Revert Left Super Overlay Shortcut
+gsettings reset org.gnome.mutter overlay-key
