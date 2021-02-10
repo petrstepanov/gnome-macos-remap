@@ -4,11 +4,11 @@
     "modes": [
         3
     ],
-    "usageCount": 215,
+    "usageCount": 191,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
-    "showInTrayMenu": true,
+    "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
         "backspace": true,
@@ -24,7 +24,7 @@
         "hotKey": " "
     },
     "filter": {
-        "regex": null,
+        "regex": "Eclipse.Eclipse",
         "isRecursive": false
     },
     "sendMode": "kb"

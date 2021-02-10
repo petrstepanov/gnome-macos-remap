@@ -1,13 +1,13 @@
 {
-    "type": "script",
-    "description": "volume-toggle",
-    "store": {},
+    "type": "phrase",
+    "description": "prev-word",
     "modes": [
         3
     ],
-    "usageCount": 23,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
+    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -18,11 +18,14 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [],
-        "hotKey": "<code192>"
+        "modifiers": [
+            "<alt>"
+        ],
+        "hotKey": "<left>"
     },
     "filter": {
         "regex": null,
         "isRecursive": false
-    }
+    },
+    "sendMode": "kb"
 }
