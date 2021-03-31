@@ -1,21 +1,32 @@
 #!/bin/bash
 
-# Flip Control and Command (Super) keyboard keys
+# Backup curent /usr/share/X11/xkb/symbols/pc
 if [ ! -f /usr/share/X11/xkb/symbols/pc.bak ]; then
+  echo "Backing up /usr/share/X11/xkb/symbols/pc..."
   sudo cp /usr/share/X11/xkb/symbols/pc /usr/share/X11/xkb/symbols/pc.bak
-else
-  sudo cp -f /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
 fi
+
+echo "Flipping Super and Control keys..."
 sudo sed -i 's/<LCTL> {\t\[ Control_L/<LCTL> {\t\[ Super_L/' /usr/share/X11/xkb/symbols/pc
 sudo sed -i 's/<LWIN> {\t\[ Super_L/<LWIN> {\t\[ Control_L/' /usr/share/X11/xkb/symbols/pc
 sudo sed -i 's/<RCTL> {\t\[ Control_R/<RCTL> {\t\[ Super_R/' /usr/share/X11/xkb/symbols/pc
 sudo sed -i 's/<RWIN> {\t\[ Super_R/<RWIN> {\t\[ Control_R/' /usr/share/X11/xkb/symbols/pc
-  
+
 # Install Autokey repository
 mkdir -p ~/.config/autokey/data
-cp -r ./gnome-macos-phrases ~/.config/autokey/data/
+rm -rf ~/.config/autokey/data/gnome-macos-phrases
+if [ -z "$1" ]; then
+  # No argumant supplied
+  echo "Copying AutoKey Phrases..."
+  cp -r ${PWD}/gnome-macos-phrases ~/.config/autokey/data/
+else
+  # Argument supplied
+  echo "Linking AutoKey Phrases..."
+  ln -s ${PWD}/gnome-macos-phrases ~/.config/autokey/data/gnome-macos-phrases
+fi
 
 # Tweak standard GNOME keybindings
+echo "Changing default GNOME keybindings..."
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "[]"
 gsettings set org.gnome.desktop.wm.keybindings close "['<Primary>w']"
 gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['LaunchA']"
@@ -50,3 +61,11 @@ gsettings set org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/k
 
 # Disable Left Super Overlay Shortcut
 gsettings set org.gnome.mutter overlay-key 'Super_R'
+
+echo ""
+echo "Almost there! Please do following:"
+echo "1. Open 'autokey-gtk'."
+echo "   In Edit -> Preferences select 'Automatically start AutoKey at login'."
+echo "2. Restart your computer."
+echo "3. On the login screen under the gear icon on the bottom right select 'GNOME on Xorg'."
+echo "4. Enjoy!"

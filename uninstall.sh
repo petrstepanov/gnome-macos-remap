@@ -1,12 +1,17 @@
 #!/bin/bash
 
 # Force move backup mapping file to original
-sudo mv -f /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
+if [ -f /usr/share/X11/xkb/symbols/pc.bak ]; then
+  echo "Restoring Super and Control behaviour ..."
+  sudo mv -f /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
+fi
 
 # Uninstall Autokey repository
+echo "Uninstalling autokey phrases..."
 rm -rf ~/.config/autokey/data/gnome-macos-phrases
 
 # Revert standard GNOME keybindings
+echo "Reverting default GNOME keybindings..."
 gsettings reset org.gnome.desktop.wm.keybindings activate-window-menu
 gsettings reset org.gnome.desktop.wm.keybindings close
 gsettings reset org.gnome.desktop.wm.keybindings panel-main-menu
@@ -32,11 +37,14 @@ gsettings reset org.gnome.settings-daemon.plugins.media-keys window-screenshot
 gsettings reset org.gnome.settings-daemon.plugins.media-keys area-screenshot
 gsettings reset org.gnome.settings-daemon.plugins.media-keys screensaver
 
-gsettings reset org.gnome.Terminal.Legacy.Keybindings new-tab
-gsettings reset org.gnome.Terminal.Legacy.Keybindings new-window
-gsettings reset org.gnome.Terminal.Legacy.Keybindings close-tab
-gsettings reset org.gnome.Terminal.Legacy.Keybindings close-window
-gsettings reset org.gnome.Terminal.Legacy.Keybindings find
+gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-tab
+gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-window
+gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-tab
+gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ close-window
+gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ find
 
 # Revert Left Super Overlay Shortcut
 gsettings reset org.gnome.mutter overlay-key
+
+echo ""
+echo "Uninstall complete. Please restart your computer."
