@@ -24,7 +24,7 @@ Make sure you are using X11, not Wayland. Logout from your session. On the GNOME
 Install `autokey`, `autokey-gtk` and `git` packages with the package manager of your chioce. On Debian based distribution (Ubuntu, Pop!, Zorin...) run `sudo apt-get install git autokey autokey-gtk`. On Fedora run `sudo dnf install git autokey autokey-gtk`.
 
 ## Installation
-Check out the repository to an arbitrary location and run the `install.sh` script in Terminal. Script will ask for administrator password.
+1. Check out the repository to some arbitrary location and run the `install.sh` script in Terminal. Script will ask for administrator password.
 
 ```
 git clone https://github.com/petrstepanov/gnome-macos-remap
@@ -32,8 +32,11 @@ cd gnome-macos-remap
 sh install.sh
 ```
 
-Open AutoKey preferences and make sure the "Automatically start AutoKey at login" checkbox is on. 
-System restart is required in order for the remap to start working.
+2. Open AutoKey preferences and make sure the "Automatically start AutoKey at login" checkbox is on. 
+3. Restart your computer. 
+4. On the GNOME login screen click ⚙ icon and select 'GNOME on Xorg'."
+
+Enjoy your linux with native MacOS keybindings.
 
 ## Postinstall tips
 To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
