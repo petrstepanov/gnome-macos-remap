@@ -34,15 +34,14 @@ sh install.sh
 
 2. Open AutoKey (`autokey-gtk`). In Edit -> Preferences menu make sure the `Automatically start AutoKey at login` checkbox is on. 
 3. Restart your computer.
-4. On the GNOME login screen click ⚙ icon and select `GNOME on Xorg`.
-
-Enjoy your linux with native MacOS keybindings.
+4. On the GNOME login screen click ⚙ icon and select `GNOME on Xorg`. Log in.
 
 ## Postinstall tips
 To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
 
 ## How to uninstall
-Navigate into the program directory in Terminal and run `uninstall.sh`.
+1. Navigate into the program directory in Terminal and run `uninstall.sh`.
+2. Restart your computer.
 
 ## How to contribute
 Please run the `sh install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and push the changes to the repoisitory.
