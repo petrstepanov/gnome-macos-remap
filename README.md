@@ -49,3 +49,5 @@ Please run the `sh install.sh dev` command. This will create a symbolic link for
 
 ## Rodmap
 Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
+
+GNOME 40 workspaces keybindings will be added soon.
