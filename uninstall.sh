@@ -33,8 +33,9 @@ gsettings reset org.gnome.mutter.keybindings toggle-tiled-right
 
 gsettings reset org.gnome.mutter.wayland.keybindings restore-shortcuts
 
-gsettings reset org.gnome.settings-daemon.plugins.media-keys window-screenshot
+gsettings reset org.gnome.settings-daemon.plugins.media-keys screenshot
 gsettings reset org.gnome.settings-daemon.plugins.media-keys area-screenshot
+gsettings reset org.gnome.settings-daemon.plugins.media-keys window-screenshot
 gsettings reset org.gnome.settings-daemon.plugins.media-keys screensaver
 
 gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ new-tab

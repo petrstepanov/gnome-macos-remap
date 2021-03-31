@@ -53,8 +53,9 @@ gsettings set org.gnome.mutter.keybindings toggle-tiled-right "[]"
 
 gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "[]"
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot "['<Primary><Shift>numbersign']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot "['<Primary><Shift>numbersign']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['<Primary><Shift>dollar']"
+gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot "['<Primary><Shift>percent']"
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
 
 # Setting relocatable schema
