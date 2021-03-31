@@ -32,9 +32,9 @@ cd gnome-macos-remap
 sh install.sh
 ```
 
-2. Open AutoKey preferences and make sure the "Automatically start AutoKey at login" checkbox is on. 
-3. Restart your computer. 
-4. On the GNOME login screen click ⚙ icon and select 'GNOME on Xorg'."
+2. Open AutoKey (`autokey-gtk`). In Edit -> Preferences menu make sure the `Automatically start AutoKey at login` checkbox is on. 
+3. Restart your computer.
+4. On the GNOME login screen click ⚙ icon and select `GNOME on Xorg`.
 
 Enjoy your linux with native MacOS keybindings.
 
