@@ -30,6 +30,9 @@ else
   ln -s ${PWD}/gnome-macos-phrases ~/.config/autokey/data/gnome-macos-phrases
 fi
 
+# Revert combinations used in previous script versions
+gsettings reset org.gnome.desktop.wm.keybindings close
+
 # Tweak standard GNOME keybindings
 echo "Changing default GNOME keybindings..."
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "[]"
