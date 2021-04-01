@@ -28,7 +28,6 @@ fi
 # Tweak standard GNOME keybindings
 echo "Changing default GNOME keybindings..."
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "[]"
-gsettings set org.gnome.desktop.wm.keybindings close "['<Primary>w']"
 gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['LaunchA']"
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Primary>d']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Primary>Tab']"

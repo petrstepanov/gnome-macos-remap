@@ -13,7 +13,6 @@ rm -rf ~/.config/autokey/data/gnome-macos-phrases
 # Revert standard GNOME keybindings
 echo "Reverting default GNOME keybindings..."
 gsettings reset org.gnome.desktop.wm.keybindings activate-window-menu
-gsettings reset org.gnome.desktop.wm.keybindings close
 gsettings reset org.gnome.desktop.wm.keybindings panel-main-menu
 gsettings reset org.gnome.desktop.wm.keybindings show-desktop
 gsettings reset org.gnome.desktop.wm.keybindings switch-applications
@@ -46,6 +45,9 @@ gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy
 
 # Revert Left Super Overlay Shortcut
 gsettings reset org.gnome.mutter overlay-key
+
+# Revert combinations used in previous script versions
+gsettings reset org.gnome.desktop.wm.keybindings close
 
 echo ""
 echo "Uninstall complete. Please restart your computer."
