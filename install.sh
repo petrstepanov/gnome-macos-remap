@@ -46,6 +46,7 @@ gsettings set org.gnome.desktop.wm.keybindings switch-input-source "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Right']"
 gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Left']"
+gsettings set org.gnome.desktop.wm.keybindings minimize "['<Primary>m']"
 
 gsettings set org.gnome.shell.keybindings toggle-application-view "['LaunchB']"
 gsettings set org.gnome.shell.keybindings toggle-message-tray "[]"

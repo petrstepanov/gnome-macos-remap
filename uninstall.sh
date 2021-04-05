@@ -23,6 +23,7 @@ gsettings reset org.gnome.desktop.wm.keybindings switch-input-source
 gsettings reset org.gnome.desktop.wm.keybindings switch-input-source-backward
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-down
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-up
+gsettings reset org.gnome.desktop.wm.keybindings minimize
 
 gsettings reset org.gnome.shell.keybindings toggle-application-view
 gsettings reset org.gnome.shell.keybindings toggle-message-tray
