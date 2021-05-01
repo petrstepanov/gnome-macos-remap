@@ -24,7 +24,8 @@ Make sure you are using X11, not Wayland. Logout from your session. On the GNOME
 Install `autokey`, `autokey-gtk` and `git` packages with the package manager of your chioce. On Debian based distribution (Ubuntu, Pop!, Zorin...) run `sudo apt-get install git autokey autokey-gtk`. On Fedora run `sudo dnf install git autokey autokey-gtk`.
 
 ## Installation
-1. Check out the repository to some arbitrary location and run the `install.sh` script in Terminal. Script will ask for administrator password.
+1. Make sure you are running `Xorg` display server. If not sure logout from your session. On the GNOME login screen click ⚙ icon on the bottom right. Select `GNOME on Xorg`. Log in.
+2. Check out the repository to some arbitrary location and run the `install.sh` script in Terminal. Script will ask for administrator password.
 
 ```
 git clone https://github.com/petrstepanov/gnome-macos-remap
@@ -32,9 +33,8 @@ cd gnome-macos-remap
 sh install.sh
 ```
 
-2. Open AutoKey (`autokey-gtk`). In Edit -> Preferences menu make sure the `Automatically start AutoKey at login` checkbox is on. 
+3. Open AutoKey (`autokey-gtk`). In Edit -> Preferences menu make sure the `Automatically start AutoKey at login` checkbox is on. 
 3. Restart your computer.
-4. On the GNOME login screen click ⚙ icon and select `GNOME on Xorg`. Log in.
 
 ## Postinstall tips
 To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
@@ -47,6 +47,6 @@ To get a functionality similar to the macOS Spotlight, I recommend installing th
 Please run the `sh install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and push the changes to the repoisitory.
 
 ## Rodmap
-Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
+Script supports GNOME 40 horizontal workspace switching.
 
-GNOME 40 workspaces keybindings will be added soon.
+Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
