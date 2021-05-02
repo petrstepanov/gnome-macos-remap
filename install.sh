@@ -45,26 +45,21 @@ gsettings set org.gnome.desktop.wm.keybindings switch-group-backward "['<Primary
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source "[]"
 gsettings set org.gnome.desktop.wm.keybindings switch-input-source-backward "[]"
 
-echo -n "Are you running GNOME 40? (y/n)? "
-read answer
-
+# Workspace switching hotkeys
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-down
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-up
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-left
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-right
-
-if [ "$answer" != "${answer#[Yy]}" ] ;then
-    # echo Yes
+GNOME_VERSION=`gnome-shell --version`
+if [[ $GNOME_VERSION == *"Shell 4"* ]]; then
+    # Gnome >= 40
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>Left']"
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>Right']"
-    
 else
-    # echo No
+    # Gnome < 40
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Right']"
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Left']"
-    
 fi
-
 
 gsettings set org.gnome.desktop.wm.keybindings minimize "['<Primary>m']"
 
