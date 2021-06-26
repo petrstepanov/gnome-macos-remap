@@ -1,10 +1,10 @@
 {
     "type": "phrase",
-    "description": "terminal-paste",
+    "description": "terminal-ctrl-n",
     "modes": [
         3
     ],
-    "usageCount": 48,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -19,9 +19,9 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>"
+            "<super>"
         ],
-        "hotKey": "v"
+        "hotKey": "n"
     },
     "filter": {
         "regex": "gnome-terminal-server",

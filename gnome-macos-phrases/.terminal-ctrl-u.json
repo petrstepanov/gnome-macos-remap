@@ -1,6 +1,6 @@
 {
     "type": "phrase",
-    "description": "terminal-interrupt",
+    "description": "terminal-ctrl-u",
     "modes": [
         3
     ],
@@ -21,10 +21,10 @@
         "modifiers": [
             "<super>"
         ],
-        "hotKey": "c"
+        "hotKey": "u"
     },
     "filter": {
-        "regex": "gnome-terminal-server.Gnome-terminal",
+        "regex": "gnome-terminal-server",
         "isRecursive": false
     },
     "sendMode": "kb"

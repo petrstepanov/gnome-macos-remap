@@ -1,10 +1,10 @@
 {
     "type": "phrase",
-    "description": "terminal-paste",
+    "description": "terminal-ctrl-j",
     "modes": [
         3
     ],
-    "usageCount": 48,
+    "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -19,9 +19,9 @@
     },
     "hotkey": {
         "modifiers": [
-            "<ctrl>"
+            "<super>"
         ],
-        "hotKey": "v"
+        "hotKey": "j"
     },
     "filter": {
         "regex": "gnome-terminal-server",
