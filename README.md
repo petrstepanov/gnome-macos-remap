@@ -39,6 +39,8 @@ sh install.sh
 ## Postinstall tips
 To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
 
+Logitech MX series keyboard users please [use Solaar to set your keyboard to use macOS layout](https://github.com/petrstepanov/gnome-macos-remap/issues/12).
+
 ## How to uninstall
 1. Navigate into the program directory in Terminal and run `uninstall.sh`.
 2. Restart your computer.
