@@ -50,8 +50,10 @@ gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-down
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-up
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-left
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-right
+
 GNOME_VERSION=`gnome-shell --version`
-if [[ $GNOME_VERSION == *"Shell 4"* ]]; then
+# Tip: check if $GNOME_VERSION is non zero length. E.g. Pop!_OS does not have "gnome_shell" command
+if [ -z $GNOME_VERSION ] && [ $GNOME_VERSION == *"Shell 4"* ]; then
     # Gnome >= 40
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>Left']"
     gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>Right']"
