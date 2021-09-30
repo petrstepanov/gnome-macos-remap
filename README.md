@@ -21,7 +21,10 @@ The functionality is based on the Autokey mechanism. On top of that the default 
 ## Prerequisities
 Make sure you are using X11, not Wayland. Logout from your session. On the GNOME login screen find and click gear icon. Select option "GNOME on Xorg". Log back in.
 
-Install `autokey`, `autokey-gtk` and `git` packages with the package manager of your chioce. On Debian based distribution (Ubuntu, Zorin...) run `sudo apt-get install git autokey autokey-gtk`. On Pop!_OS run `sudo apt-get install git autokey-common autokey-gtk`. On Fedora run `sudo dnf install git autokey autokey-gtk`.
+Install `autokey`, `autokey-gtk` and `git` packages with the package manager of your chioce. 
+* On Pop!_OS run `sudo apt-get install git autokey-common autokey-gtk`.
+* On other Debian based distributions (Ubuntu, Zorin...) run `sudo apt-get install git autokey autokey-gtk`.  
+* On Fedora run `sudo dnf install git autokey autokey-gtk`.
 
 ## Installation
 1. Make sure you are running `Xorg` display server. If not sure logout from your session. On the GNOME login screen click ⚙ icon on the bottom right. Select `GNOME on Xorg`. Log in.
