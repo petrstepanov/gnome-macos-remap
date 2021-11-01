@@ -1,6 +1,6 @@
 {
     "type": "phrase",
-    "description": "gedit-enter-folder",
+    "description": "gedit-exit-folder",
     "modes": [
         3
     ],

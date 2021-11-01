@@ -24,7 +24,8 @@
         "hotKey": "<up>"
     },
     "filter": {
-        "regex": "^.*(Nautilus).*$",
+        "comment": "Don't set REGEXP here because we want this in Open/Save dialogs",
+        "regex": "",
         "isRecursive": false
     },
     "sendMode": "kb"

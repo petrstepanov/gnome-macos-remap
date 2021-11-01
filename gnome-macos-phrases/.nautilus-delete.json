@@ -24,6 +24,7 @@
         "hotKey": "<backspace>"
     },
     "filter": {
+        "comment": "Delete does not work in open/save file dialogs anyways, so we limit it to Nautilus only via REGEXP",
         "regex": "^.*(Nautilus).*$",
         "isRecursive": false
     },
