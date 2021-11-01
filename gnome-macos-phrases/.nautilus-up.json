@@ -24,7 +24,7 @@
         "hotKey": "<up>"
     },
     "filter": {
-        "regex": null,
+        "regex": "^.*(Nautilus).*$",
         "isRecursive": false
     },
     "sendMode": "kb"

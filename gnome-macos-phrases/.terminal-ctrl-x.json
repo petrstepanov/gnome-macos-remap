@@ -24,7 +24,7 @@
         "hotKey": "x"
     },
     "filter": {
-        "regex": "gnome-terminal-server",
+        "regex": "^.*(terminal).*$",
         "isRecursive": false
     },
     "sendMode": "kb"

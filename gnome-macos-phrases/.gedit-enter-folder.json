@@ -1,8 +1,10 @@
 {
     "type": "phrase",
     "description": "gedit-enter-folder",
-    "modes": [],
-    "usageCount": 0,
+    "modes": [
+        3
+    ],
+    "usageCount": 3,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -16,11 +18,13 @@
         "wordChars": "[\\w]"
     },
     "hotkey": {
-        "modifiers": [],
-        "hotKey": null
+        "modifiers": [
+            "<ctrl>"
+        ],
+        "hotKey": "<down>"
     },
     "filter": {
-        "regex": null,
+        "regex": "^.*(Gedit).*$",
         "isRecursive": false
     },
     "sendMode": "kb"

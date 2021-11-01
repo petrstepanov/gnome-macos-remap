@@ -24,7 +24,7 @@
         "hotKey": "<backspace>"
     },
     "filter": {
-        "regex": null,
+        "regex": "^.*(Nautilus).*$",
         "isRecursive": false
     },
     "sendMode": "kb"
