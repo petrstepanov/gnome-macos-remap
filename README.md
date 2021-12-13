@@ -1,5 +1,7 @@
 # Gnome → macOS Keyboard Remap
 
+Autokey based remap, works with Xorg only. Wayland solution coming soon! 
+
 <figure>
   <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
 </figure>
