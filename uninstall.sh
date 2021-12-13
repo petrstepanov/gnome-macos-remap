@@ -27,6 +27,7 @@ gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-left
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-right
 gsettings reset org.gnome.desktop.wm.keybindings minimize
 
+gsettings reset org.gnome.shell.keybindings toggle-overview
 gsettings reset org.gnome.shell.keybindings toggle-application-view
 gsettings reset org.gnome.shell.keybindings toggle-message-tray
 

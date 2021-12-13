@@ -36,7 +36,23 @@ gsettings reset org.gnome.desktop.wm.keybindings close
 # Tweak standard GNOME keybindings
 echo "Changing default GNOME keybindings..."
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "[]"
-gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['LaunchA']"
+
+# Get GNOME version (outputs e.g. "GNOME Shell 40.6")
+GNOME_VERSION_STR=`gnome-shell --version`
+
+# Tip: Pop!_OS outputs empty "gnome-shell" command. As of Dec 2021 we assume Pop!_OS has GNOME 39
+if [ -z "GNOME_VERSION_STR" ]
+then
+  GNOME_VERSION_STR="GNOME Shell 39"
+fi
+
+# Extract integer GNOME version (major) with REGEX
+REGEX="GNOME Shell ([0-9]+)"
+[[ $GNOME_VERSION_STR =~ $REGEX ]]
+GNOME_VERSION_INT=${BASH_REMATCH[1]}
+
+echo "Detected major GNOME version $GNOME_VERSION_INT"
+
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Primary>d']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Primary>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Primary><Shift>Tab']"
@@ -51,21 +67,28 @@ gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-up
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-left
 gsettings reset org.gnome.desktop.wm.keybindings switch-to-workspace-right
 
-GNOME_VERSION=`gnome-shell --version`
-# Tip: check if $GNOME_VERSION is non zero length. E.g. Pop!_OS does not have "gnome_shell" command
-if [[ ! -z "$GNOME_VERSION" && $GNOME_VERSION == *"Shell 4"* ]]; then
-    echo "Detected GNOME version >= 40"
-    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>Left']"
-    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>Right']"
+# Workspace switching is horizontal starting GNOME 40
+if (( GNOME_VERSION_INT >= 40 )); then
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-left "['<Super>Left']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-right "['<Super>Right']"
 else
-    echo "Detected GNOME version < 40"    
-    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Right']"
-    gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Left']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-down "['<Super>Right']"
+  gsettings set org.gnome.desktop.wm.keybindings switch-to-workspace-up "['<Super>Left']"
 fi
 
 gsettings set org.gnome.desktop.wm.keybindings minimize "['<Primary>m']"
 
+# Overview hotkey moved to "/org/gnome/shell/keybindings/" starting Gnome 41
+if (( GNOME_VERSION_INT >= 41 )); then
+  gsettings set /org/gnome/shell/keybindings toggle-overview "['LaunchA']"
+else
+  gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['LaunchA']"
+fi
+
+# Show applications view
 gsettings set org.gnome.shell.keybindings toggle-application-view "['LaunchB']"
+
+# Other stuff
 gsettings set org.gnome.shell.keybindings toggle-message-tray "[]"
 
 gsettings set org.gnome.mutter.keybindings toggle-tiled-left "[]"
