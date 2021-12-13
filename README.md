@@ -1,6 +1,6 @@
 # GNOME → macOS Keyboard Remap
 
-This is an Autokey based remap and works with Xorg only. Wayland solution is [in early development and is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
+This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it currently works with Xorg only. Wayland solution is [in early development and is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
 
 <figure>
   <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
@@ -54,8 +54,9 @@ Logitech MX series keyboard users please [use Solaar to set your keyboard to use
 Please run the `sh install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and push the changes to the repoisitory.
 
 # Updates
-* Dec 13, 2021 • Fixed deprecated overlay hotkey introduced in GNOME 41.
-* Apr 30, 2021 • Added support for GNOME 40 horizontal workspace switching.
+Dec 13, 2021 • Fixed deprecated overlay hotkey introduced in GNOME 41.
+
+Apr 30, 2021 • Added support for GNOME 40 horizontal workspace switching.
 
 ## Rodmap
 Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
