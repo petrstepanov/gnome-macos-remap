@@ -53,7 +53,9 @@ Logitech MX series keyboard users please [use Solaar to set your keyboard to use
 ## How to contribute
 Please run the `sh install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and push the changes to the repoisitory.
 
-# Updates
+# Changelog
+Dec 14, 2021 • Improved pasting in GNOME Terminal.
+
 Dec 13, 2021 • Fixed deprecated overlay hotkey introduced in GNOME 41.
 
 Apr 30, 2021 • Added support for GNOME 40 horizontal workspace switching.

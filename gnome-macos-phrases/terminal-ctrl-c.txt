@@ -1,1 +1,1 @@
-<ctrl>+c
+<ctrl>+<shift>+c
