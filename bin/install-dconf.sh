@@ -26,22 +26,25 @@ gsettings reset org.gnome.desktop.wm.keybindings close
 echo "Changing default GNOME keybindings..."
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "[]"
 
-# Get GNOME version (outputs e.g. "GNOME Shell 40.6")
+
+# Command outputs e.g. "GNOME Shell 40.6"
 GNOME_VERSION_STR=`gnome-shell --version`
 
-# Tip: Pop!_OS outputs empty "gnome-shell" command. As of Dec 2021 we assume Pop!_OS has GNOME 39
-if [ -z "GNOME_VERSION_STR" ]
+# Bug on Pop!_OS 20.04. The `gnome-shell --version` command outputs empty string. 
+# Therefore we input in manually. On Pop!_OS 21.10 this is fixed.
+if [ -z "$GNOME_VERSION_STR" ]
 then
-  GNOME_VERSION_STR="GNOME Shell 39"
+  GNOME_VERSION_STR="GNOME Shell 3.36"
 fi
 
-# Extract integer GNOME version (major) with REGEX
-REGEX="GNOME Shell ([0-9]+)"
-[[ $GNOME_VERSION_STR =~ $REGEX ]]
-GNOME_VERSION_INT=${BASH_REMATCH[1]}
+# Extract integer GNOME version with REGEX
+if [[ "$GNOME_VERSION_STR" =~ ^GNOME Shell ([0-9]+) ]]
+then
+  GNOME_VERSION_INT=${BASH_REMATCH[1]}
+  echo "Detected GNOME version $GNOME_VERSION_INT"
+fi
 
-echo "Detected major GNOME version $GNOME_VERSION_INT"
-
+# Apply dconf tweaks
 gsettings set org.gnome.desktop.wm.keybindings show-desktop "['<Primary>d']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications "['<Primary>Tab']"
 gsettings set org.gnome.desktop.wm.keybindings switch-applications-backward "['<Primary><Shift>Tab']"

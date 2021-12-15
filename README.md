@@ -24,8 +24,8 @@ The functionality is based on the Autokey mechanism. On top of that the default 
 Make sure you are using X11, not Wayland. Logout from your session. On the GNOME login screen find and click gear icon. Select option "GNOME on Xorg". Log back in.
 
 Install [Git](https://github.com/git/git) and [AutoKey](https://github.com/autokey/autokey) with package manager of your choice: 
+* On Debian based distributions (Ubuntu, Zorin...) run `sudo apt-get install git autokey-gtk`.
 * On Pop!_OS run `sudo apt-get install git autokey-common autokey-gtk`.
-* On other Debian based distributions (Ubuntu, Zorin...) run `sudo apt-get install git autokey autokey-gtk`.  
 * On Fedora run `sudo dnf install git autokey autokey-gtk`.
 
 ## Installation
@@ -35,7 +35,8 @@ Install [Git](https://github.com/git/git) and [AutoKey](https://github.com/autok
 ```
 git clone https://github.com/petrstepanov/gnome-macos-remap
 cd gnome-macos-remap
-sh install.sh
+chmod +x ./install.sh
+./install.sh
 ```
 
 3. Open AutoKey (`autokey-gtk`). In Edit -> Preferences menu make sure the `Automatically start AutoKey at login` checkbox is on. 
@@ -47,11 +48,11 @@ To get a functionality similar to the macOS Spotlight, I recommend installing th
 Logitech MX series keyboard users please [use Solaar to set your keyboard to use macOS layout](https://github.com/petrstepanov/gnome-macos-remap/issues/12).
 
 ## How to uninstall
-1. Navigate into the program directory in Terminal and run `uninstall.sh`.
+1. Navigate into the program directory in Terminal and run `./uninstall.sh`.
 2. Restart your computer.
 
 ## How to contribute
-Please run the `sh install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and push the changes to the repoisitory.
+Please run the `./install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and push the changes to the repoisitory.
 
 # Changelog
 Dec 14, 2021 • Improved pasting in GNOME Terminal.

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-sh ./bin/install-autokey.sh
-sh ./bin/install-dconf.sh
+bash ./bin/install-autokey.sh
+bash ./bin/install-dconf.sh
 
 echo ""
 echo "Almost there! Please do following:"
