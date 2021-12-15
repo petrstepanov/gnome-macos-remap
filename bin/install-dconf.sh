@@ -38,7 +38,8 @@ then
 fi
 
 # Extract integer GNOME version with REGEX
-if [[ "$GNOME_VERSION_STR" =~ ^GNOME Shell ([0-9]+) ]]
+REGEX="GNOME Shell ([0-9]+)"
+if [[ "$GNOME_VERSION_STR" =~ $REGEX ]]
 then
   GNOME_VERSION_INT=${BASH_REMATCH[1]}
   echo "Detected GNOME version $GNOME_VERSION_INT"
