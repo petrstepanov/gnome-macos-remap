@@ -57,13 +57,13 @@ chmod +x ./install.sh ./uninstall.sh
 Please run the `./install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and introduce the pull request to the repoisitory.
 
 # Changelog
-Dec 16, 2021 • Fixed the `ctrl w` keyboard shortcut in Terminal.
+`Dec 16, 2021` • Fixed the `ctrl w` keyboard shortcut in Terminal.
 
-Dec 14, 2021 • Improved pasting in GNOME Terminal.
+`Dec 14, 2021` • Improved pasting in GNOME Terminal.
 
-Dec 13, 2021 • Fixed deprecated overlay hotkey introduced in GNOME 41.
+`Dec 13, 2021` • Fixed deprecated overlay hotkey introduced in GNOME 41.
 
-Apr 30, 2021 • Added support for GNOME 40 horizontal workspace switching.
+`Apr 30, 2021` • Added support for GNOME 40 horizontal workspace switching.
 
 ## Rodmap
 Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
