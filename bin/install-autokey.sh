@@ -1,8 +1,9 @@
 #!/bin/bash
 
-# Install Autokey repository
+# Install Autokey phrases and scripts
 mkdir -p ~/.config/autokey/data
 rm -rf ~/.config/autokey/data/gnome-macos-phrases
+
 if [ -z "$1" ]; then
   # No argumant supplied
   echo "Copying AutoKey Phrases..."

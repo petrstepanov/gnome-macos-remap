@@ -1,6 +1,9 @@
 #!/bin/bash
 
-bash ./bin/install-autokey.sh
+# Install autokey phrases and scripts
+bash ./bin/install-autokey.sh "$1"
+
+# Remap CTRL and COMMAND. Change default GNOME keybindings in dconf.
 bash ./bin/install-dconf.sh
 
 echo ""
