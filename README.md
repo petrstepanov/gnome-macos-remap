@@ -44,7 +44,7 @@ chmod +x ./install.sh ./uninstall.sh
 3. Open AutoKey (`autokey-gtk`). In Edit -> Preferences menu make sure the `Automatically start AutoKey at login` checkbox is on. 
 3. Restart your computer.
 
-## Postinstall tips
+## Postinstall notes
 * To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
 * Current implementation requires re-installing the script after each kernel update.
 * Logitech MX series keyboard users please [use Solaar to set your keyboard to use macOS layout](https://github.com/petrstepanov/gnome-macos-remap/issues/12).
@@ -56,7 +56,7 @@ chmod +x ./install.sh ./uninstall.sh
 ## How to contribute
 Please run the `./install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and introduce the pull request to the repoisitory.
 
-# Changelog
+## Changelog
 `Dec 16, 2021` • Fixed the `ctrl w` keyboard shortcut in Terminal.
 
 `Dec 14, 2021` • Improved pasting in GNOME Terminal.
