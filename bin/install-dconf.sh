@@ -75,8 +75,8 @@ gsettings set org.gnome.desktop.wm.keybindings minimize "['<Primary>m']"
 if (( GNOME_VERSION_INT >= 41 )); then
   gsettings set org.gnome.shell.keybindings toggle-overview "['LaunchA']"
 else
-  gsettings set org.gnome.shell.keybindings toggle-overview "[]"
-  gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['LaunchA']"
+  gsettings set org.gnome.shell.keybindings toggle-overview "['LaunchA']"
+  gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "[]"
 fi
 
 # Show applications view
