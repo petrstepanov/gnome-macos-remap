@@ -1,0 +1,31 @@
+{
+    "type": "phrase",
+    "description": "terminal-ctrl-s",
+    "modes": [
+        3
+    ],
+    "usageCount": 0,
+    "prompt": false,
+    "omitTrigger": false,
+    "matchCase": false,
+    "showInTrayMenu": false,
+    "abbreviation": {
+        "abbreviations": [],
+        "backspace": true,
+        "ignoreCase": false,
+        "immediate": false,
+        "triggerInside": false,
+        "wordChars": "[\\w]"
+    },
+    "hotkey": {
+        "modifiers": [
+            "<super>"
+        ],
+        "hotKey": "s"
+    },
+    "filter": {
+        "regex": "^.*(terminal).*$",
+        "isRecursive": false
+    },
+    "sendMode": "kb"
+}
