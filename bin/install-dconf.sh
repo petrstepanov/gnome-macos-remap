@@ -73,8 +73,9 @@ gsettings set org.gnome.desktop.wm.keybindings minimize "['<Primary>m']"
 
 # Overview hotkey moved to "/org/gnome/shell/keybindings/" starting Gnome 41
 if (( GNOME_VERSION_INT >= 41 )); then
-  gsettings set /org/gnome/shell/keybindings toggle-overview "['LaunchA']"
+  gsettings set org.gnome.shell.keybindings toggle-overview "['LaunchA']"
 else
+  gsettings set org.gnome.shell.keybindings toggle-overview "[]"
   gsettings set org.gnome.desktop.wm.keybindings panel-main-menu "['LaunchA']"
 fi
 

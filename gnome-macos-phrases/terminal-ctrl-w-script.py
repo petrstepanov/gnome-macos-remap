@@ -9,6 +9,7 @@
 
 from gi.repository.Gio import Settings as GSettings
 import time
+
 KB_SCHEMA = 'org.gnome.Terminal.Legacy.Keybindings'
 KB_PATH = '/org/gnome/terminal/legacy/keybindings/'
 
@@ -18,7 +19,8 @@ gsettings = GSettings(schema=KB_SCHEMA, path=KB_PATH)
 # https://lazka.github.io/pgi-docs/#Gio-2.0/classes/Settings.html#Gio.Settings.reset
 gsettings.reset('close-tab')
 
-# Send combination
+# Wait till settings applied and send combination
+time.sleep(0.2)
 keyboard.send_keys('<ctrl>+w')
 
 # Alternative:
@@ -26,8 +28,8 @@ keyboard.send_keys('<ctrl>+w')
 # keyboard.fake_keypress('w')
 # keyboard.release_key('<ctrl>')
 
-# Sleep 2 seconds for the system to process the event
-time.sleep(2)
+# Sleep 1/2 seconds for the system to process the event
+time.sleep(0.5)
 
 # Revert the close tab keyboard shortcut 
 # https://lazka.github.io/pgi-docs/#Gio-2.0/classes/Settings.html#Gio.Settings.set_string
