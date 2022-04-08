@@ -1,13 +1,13 @@
 {
-    "type": "phrase",
-    "description": "terminal-ctrl-f",
+    "type": "script",
+    "description": "terminal-ctrl-f-script",
+    "store": {},
     "modes": [
         3
     ],
     "usageCount": 0,
     "prompt": false,
     "omitTrigger": false,
-    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -26,6 +26,5 @@
     "filter": {
         "regex": "^.*(terminal).*$",
         "isRecursive": false
-    },
-    "sendMode": "kb"
+    }
 }
