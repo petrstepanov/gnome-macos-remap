@@ -32,9 +32,16 @@ gsettings reset org.gnome.mutter.keybindings toggle-tiled-right
 
 gsettings reset org.gnome.mutter.wayland.keybindings restore-shortcuts
 
-gsettings reset org.gnome.settings-daemon.plugins.media-keys screenshot
-gsettings reset org.gnome.settings-daemon.plugins.media-keys area-screenshot
-gsettings reset org.gnome.settings-daemon.plugins.media-keys window-screenshot
+if (( GNOME_VERSION_INT >= 42 )); then
+  gsettings reset org.gnome.shell.keybindings screenshot
+  gsettings reset org.gnome.shell.keybindings show-screenshot-ui
+  gsettings reset org.gnome.shell.keybindings screenshot-window
+else
+  gsettings reset org.gnome.settings-daemon.plugins.media-keys screenshot
+  gsettings reset org.gnome.settings-daemon.plugins.media-keys area-screenshot
+  gsettings reset org.gnome.settings-daemon.plugins.media-keys window-screenshot
+fi
+
 gsettings reset org.gnome.settings-daemon.plugins.media-keys screensaver
 
 gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy/keybindings/ copy

@@ -26,7 +26,6 @@ gsettings reset org.gnome.desktop.wm.keybindings close
 echo "Changing default GNOME keybindings..."
 gsettings set org.gnome.desktop.wm.keybindings activate-window-menu "[]"
 
-
 # Command outputs e.g. "GNOME Shell 40.6"
 GNOME_VERSION_STR=`gnome-shell --version`
 
@@ -90,9 +89,16 @@ gsettings set org.gnome.mutter.keybindings toggle-tiled-right "[]"
 
 gsettings set org.gnome.mutter.wayland.keybindings restore-shortcuts "[]"
 
-gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot "['<Primary><Shift>numbersign']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['<Primary><Shift>dollar']"
-gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot "['<Primary><Shift>percent']"
+if (( GNOME_VERSION_INT >= 42 )); then
+  gsettings set org.gnome.shell.keybindings screenshot "['<Primary><Shift>numbersign']"
+  gsettings set org.gnome.shell.keybindings show-screenshot-ui "['<Shift><Control>dollar']"
+  gsettings set org.gnome.shell.keybindings screenshot-window "['<Shift><Control>percent']"
+else
+  gsettings set org.gnome.settings-daemon.plugins.media-keys screenshot "['<Primary><Shift>numbersign']"
+  gsettings set org.gnome.settings-daemon.plugins.media-keys area-screenshot "['<Primary><Shift>dollar']"
+  gsettings set org.gnome.settings-daemon.plugins.media-keys window-screenshot "['<Primary><Shift>percent']"
+fi
+
 gsettings set org.gnome.settings-daemon.plugins.media-keys screensaver "[]"
 
 # Setting relocatable schema
