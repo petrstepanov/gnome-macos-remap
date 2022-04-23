@@ -75,4 +75,4 @@ Please run the `./install.sh dev` command. This will create a symbolic link for 
 ## Rodmap
 Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
 
-Soon after Autokey 0.96.0 is released there will be a whole new filtering system which will be much more powerful and easier to use.
+After Autokey 0.96.0 is released there will be a major update to account on the new filtering system implementation.
