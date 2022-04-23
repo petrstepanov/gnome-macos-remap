@@ -62,7 +62,7 @@ Please run the `./install.sh dev` command. This will create a symbolic link for 
 
 `Apr 22, 2022` • Added support for new Screenshot tool in GNOME 42.
 
-`May 30, 2022` • Tweaked some Nano key combinations in Terminal.
+`Mar 30, 2022` • Tweaked some Nano key combinations in Terminal.
 
 `Dec 16, 2021` • Fixed the `ctrl w` keyboard shortcut in Terminal.
 
