@@ -1,21 +1,16 @@
 #!/bin/bash
 
-# Backup curent /usr/share/X11/xkb/symbols/pc
-if [ ! -f /usr/share/X11/xkb/symbols/pc.bak ]; then
-  echo "Backing up /usr/share/X11/xkb/symbols/pc..."
-  sudo cp /usr/share/X11/xkb/symbols/pc /usr/share/X11/xkb/symbols/pc.bak
-fi
-
 # Flip Super and Control keys
 echo "Flipping Super and Control keys..."
-# Use original (backed up) file if exists
+
+# If xkb backup exists from previous version install - remove it
 if [ -f /usr/share/X11/xkb/symbols/pc.bak ]; then
   sudo cp -f /usr/share/X11/xkb/symbols/pc.bak /usr/share/X11/xkb/symbols/pc
+  sudo rm -rf /usr/share/X11/xkb/symbols/pc.bak
 fi
-sudo sed -i 's/<LCTL> {\t\[ Control_L/<LCTL> {\t\[ Super_L/' /usr/share/X11/xkb/symbols/pc
-sudo sed -i 's/<LWIN> {\t\[ Super_L/<LWIN> {\t\[ Control_L/' /usr/share/X11/xkb/symbols/pc
-sudo sed -i 's/<RCTL> {\t\[ Control_R/<RCTL> {\t\[ Super_R/' /usr/share/X11/xkb/symbols/pc
-sudo sed -i 's/<RWIN> {\t\[ Super_R/<RWIN> {\t\[ Control_R/' /usr/share/X11/xkb/symbols/pc
+
+# Flip Super and Control keys - per user setting
+gsettings set org.gnome.desktop.input-sources xkb-options "['ctrl:swap_lwin_lctl', 'ctrl:swap_rwin_rctl']"
 
 # Install Autokey was here
 

@@ -4,7 +4,7 @@
     "modes": [
         3
     ],
-    "usageCount": 16,
+    "usageCount": 18,
     "prompt": false,
     "omitTrigger": false,
     "matchCase": false,
@@ -24,8 +24,7 @@
         "hotKey": "<up>"
     },
     "filter": {
-        "comment": "Don't set REGEXP here because we want this in Open/Save dialogs",
-        "regex": "",
+        "regex": "^.*(Nautilus).*$",
         "isRecursive": false
     },
     "sendMode": "kb"

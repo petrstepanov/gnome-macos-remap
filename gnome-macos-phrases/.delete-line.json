@@ -1,13 +1,13 @@
 {
-    "type": "phrase",
+    "type": "script",
     "description": "delete-line",
+    "store": {},
     "modes": [
         3
     ],
-    "usageCount": 108,
+    "usageCount": 23,
     "prompt": false,
     "omitTrigger": false,
-    "matchCase": false,
     "showInTrayMenu": false,
     "abbreviation": {
         "abbreviations": [],
@@ -24,8 +24,7 @@
         "hotKey": "<backspace>"
     },
     "filter": {
-        "regex": "^((?!Nautilus).)*$",
+        "regex": "^(?!org\\.gnome\\.Nautilus).*$",
         "isRecursive": false
-    },
-    "sendMode": "kb"
+    }
 }
