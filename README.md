@@ -57,6 +57,13 @@ chmod +x ./install.sh ./uninstall.sh
 Please run the `./install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and introduce the pull request to the repoisitory.
 
 ## Changelog
+
+`Apr 23, 2022` • Changed setup mode from global (for all users) to local user. Fixed the `ctrl d` delete line shortcut workflow.
+
+`Apr 22, 2022` • Added support for new Screenshot tool in GNOME 42.
+
+`Mar 30, 2022` • Tweaked some Nano key combinations in Terminal.
+
 `Dec 16, 2021` • Fixed the `ctrl w` keyboard shortcut in Terminal.
 
 `Dec 14, 2021` • Improved pasting in GNOME Terminal.
@@ -67,3 +74,5 @@ Please run the `./install.sh dev` command. This will create a symbolic link for 
 
 ## Rodmap
 Some hotkeys need to be implemented on the application-specific basis. However a [regexp-related issue](https://github.com/autokey/autokey/issues/161) in Autokey prevents doing it at the moment. More macOS hotkeys will be implemented once this issue is resolved.
+
+After Autokey 0.96.0 is released there will be a major update to account on the new filtering system implementation.
