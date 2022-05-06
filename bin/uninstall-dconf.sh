@@ -54,3 +54,5 @@ gsettings reset org.gnome.Terminal.Legacy.Keybindings:/org/gnome/terminal/legacy
 
 # Revert Left Super Overlay Shortcut
 gsettings reset org.gnome.mutter overlay-key
+
+gsettings reset org.gnome.desktop.input-sources xkb-options 
