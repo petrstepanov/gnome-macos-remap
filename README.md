@@ -46,6 +46,7 @@ chmod +x ./install.sh ./uninstall.sh
 
 ## Postinstall notes
 * To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
+* Smile emoji selector for Linux is a great alternative. Install [here](https://flathub.org/apps/details/it.mijorus.smile). Assign macOS-like keyboard combination `ctrl ⌘ space` via custom keyboard shortcuts in GNOME settings.
 * Current implementation requires re-installing the script after each kernel update.
 * Logitech MX series keyboard users please [use Solaar to set your keyboard to use macOS layout](https://github.com/petrstepanov/gnome-macos-remap/issues/12).
 
