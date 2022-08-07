@@ -49,6 +49,7 @@ chmod +x ./install.sh ./uninstall.sh
 * To replicate the emoji selector in macOS, there are at least two options:
     * Smile emoji selector for Linux is a great alternative. Install [here](https://flathub.org/apps/details/it.mijorus.smile). Assign macOS-like keyboard combination `ctrl ⌘ space` via custom keyboard shortcuts in GNOME settings.
     * Emote is another option. Install via `snap` [here](https://snapcraft.io/emote), or via other means detailed in the official repo [here](https://github.com/tom-james-watson/Emote). After installation, you can assign a macOS-like keyboard combination `ctrl ⌘ space` by opening the application, clicking on the hamburger menu ☰, then `Keyboard Shortcuts`.
+* To enable gestures on X11 install [touchegg](https://github.com/JoseExposito/touchegg) followed up by the [X11 Gestures GNOME extension](https://extensions.gnome.org/extension/4033/x11-gestures/).
 * Current implementation requires re-installing the script after each kernel update.
 * Logitech MX series keyboard users please [use Solaar to set your keyboard to use macOS layout](https://github.com/petrstepanov/gnome-macos-remap/issues/12).
 
