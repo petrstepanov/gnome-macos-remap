@@ -62,6 +62,8 @@ Please run the `./install.sh dev` command. This will create a symbolic link for 
 
 ## Changelog
 
+`Sept 16, 2022` • Updated install script to resolve conflicting hotkeys.
+
 `Apr 23, 2022` • Changed setup mode from global (for all users) to local user. Fixed the `ctrl d` delete line shortcut workflow.
 
 `Apr 22, 2022` • Added support for new Screenshot tool in GNOME 42.
