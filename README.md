@@ -1,14 +1,15 @@
 # GNOME → macOS Keyboard Remap
 
-<figure>
-  <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
-</figure>
-
 > [!IMPORTANT]
 > This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it **works with Xorg only**. 
 > Similar remap is **available for Wayland** and [is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
 
-Migrating to Linux from a Mac? This bash script remaps native GNOME desktop environment keybindings to the macOS defaults. Very useful keyboard remap for Linux users who are running GNOME on a Macbook, Mac or a PC with Apple keyboard. Don't spend time getting used to the default GNOME keybindings. Run the script and use your Linux just like you do use your Mac. Here are some key remaps that are implemented:
+<figure>
+  <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
+</figure>
+
+## Migrating to Linux from a Mac? 
+This bash script remaps native GNOME desktop environment keybindings to the macOS defaults. Very useful keyboard remap for Linux users who are running GNOME on a Macbook, Mac or a PC with Apple keyboard. Don't spend time getting used to the default GNOME keybindings. Run the script and use your Linux just like you do use your Mac. Here are some key remaps that are implemented:
 
 * Command key `⌘` set as main system modifier key.
 * Copy and Paste work in Terminal with `⌘ c`, `⌘ v`. Regular interrupt `ctrl c` works in Terminal.
