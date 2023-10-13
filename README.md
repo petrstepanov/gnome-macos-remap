@@ -1,6 +1,9 @@
 # GNOME → macOS Keyboard Remap
 
-This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it currently works with Xorg only. Wayland solution is [in early development and is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
+This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it **currently works with Xorg only**. 
+
+> [!IMPORTANT]
+> Similar remap is **available for Wayland** and [is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
 
 <figure>
   <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
