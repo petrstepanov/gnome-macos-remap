@@ -2,6 +2,7 @@
 
 > [!IMPORTANT]
 > This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it **works with Xorg only**. 
+>
 > Similar remap is **available for Wayland** and [is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
 
 <figure>
