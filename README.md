@@ -1,11 +1,15 @@
 # GNOME → macOS Keyboard Remap
 
-This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it currently works with Xorg only. Wayland solution is [in early development and is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
+> [!IMPORTANT]
+> This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it **works with Xorg only**. 
+>
+> Similar remap is **available for Wayland** and [is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
 
 ![Gnome macOS Remap Icon](./resources/gnome-macos-remap.png#gh-light-mode-only)
 ![Gnome macOS Remap Icon](./resources/gnome-macos-remap-dark.png#gh-dark-mode-only)
 
-Migrating to Linux from a Mac? This bash script remaps native GNOME desktop environment keybindings to the macOS defaults. Very useful keyboard remap for Linux users who are running GNOME on a Macbook, Mac or a PC with Apple keyboard. Don't spend time getting used to the default GNOME keybindings. Run the script and use your Linux just like you do use your Mac. Here are some key remaps that are implemented:
+## Migrating to Linux from a Mac? 
+This bash script remaps native GNOME desktop environment keybindings to the macOS defaults. Very useful keyboard remap for Linux users who are running GNOME on a Macbook, Mac or a PC with Apple keyboard. Don't spend time getting used to the default GNOME keybindings. Run the script and use your Linux just like you do use your Mac. Here are some key remaps that are implemented:
 
 * Command key `⌘` set as main system modifier key.
 * Copy and Paste work in Terminal with `⌘ c`, `⌘ v`. Regular interrupt `ctrl c` works in Terminal.
@@ -45,8 +49,11 @@ chmod +x ./install.sh ./uninstall.sh
 
 ## Postinstall notes
 * To get a functionality similar to the macOS Spotlight, I recommend installing the [Ulauncher application](https://ulauncher.io/). You can assign the `⌘ space` hotkey for the Ulauncher in its settings.
-* Smile emoji selector for Linux is a great alternative. Install [here](https://flathub.org/apps/details/it.mijorus.smile). Assign macOS-like keyboard combination `ctrl ⌘ space` via custom keyboard shortcuts in GNOME settings.
-* Current implementation requires re-installing the script after each kernel update.
+* To replicate the emoji selector in macOS, there are at least two options:
+    * Smile emoji selector for Linux is a great alternative. Install [here](https://flathub.org/apps/details/it.mijorus.smile). Assign macOS-like keyboard combination `ctrl ⌘ space` via custom keyboard shortcuts in GNOME settings.
+    * Emote is another option. Install via `snap` [here](https://snapcraft.io/emote), or via other means detailed in the official repo [here](https://github.com/tom-james-watson/Emote). After installation, you can assign a macOS-like keyboard combination `ctrl ⌘ space` by opening the application, clicking on the hamburger menu ☰, then `Keyboard Shortcuts`.
+* To enable gestures on X11 install [touchegg](https://github.com/JoseExposito/touchegg) followed up by the [X11 Gestures GNOME extension](https://extensions.gnome.org/extension/4033/x11-gestures/).
+* <s>Current implementation requires re-installing the script after each kernel update</s>.
 * Logitech MX series keyboard users please [use Solaar to set your keyboard to use macOS layout](https://github.com/petrstepanov/gnome-macos-remap/issues/12).
 
 ## How to uninstall
@@ -57,6 +64,8 @@ chmod +x ./install.sh ./uninstall.sh
 Please run the `./install.sh dev` command. This will create a symbolic link for autokey scripts from the repository into the autokey settings. Therefore it will be easy to add or modify AutoKey scripts and introduce the pull request to the repoisitory.
 
 ## Changelog
+
+`Sep 16, 2022` • Updated install script to resolve conflicting hotkeys.
 
 `Apr 23, 2022` • Changed setup mode from global (for all users) to local user. Fixed the `ctrl d` delete line shortcut workflow.
 
