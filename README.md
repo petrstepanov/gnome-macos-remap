@@ -2,9 +2,8 @@
 
 This keyboard remap is based on [Autokey](https://github.com/autokey/autokey) functionality. Therefore it currently works with Xorg only. Wayland solution is [in early development and is published here](https://github.com/petrstepanov/gnome-macos-remap-wayland).
 
-<figure>
-  <img src="https://github.com/petrstepanov/gnome-macos-remap/blob/master/resources/gnome-macos-remap.png?raw=true" alt="Gnome macOS Remap Icon" />
-</figure>
+![Gnome macOS Remap Icon](./resources/gnome-macos-remap.png#gh-light-mode-only)
+![Gnome macOS Remap Icon](./resources/gnome-macos-remap-dark.png#gh-dark-mode-only)
 
 Migrating to Linux from a Mac? This bash script remaps native GNOME desktop environment keybindings to the macOS defaults. Very useful keyboard remap for Linux users who are running GNOME on a Macbook, Mac or a PC with Apple keyboard. Don't spend time getting used to the default GNOME keybindings. Run the script and use your Linux just like you do use your Mac. Here are some key remaps that are implemented:
 
