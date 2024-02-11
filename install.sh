@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Check that display is Xorg, and not Wayland. It won't work properly with Wayland
+[ -n "$WAYLAND_DISPLAY" ] && echo "Please switch to X11. Wayland is not supported." && exit 1
+
 # Install autokey phrases and scripts
 bash ./bin/install-autokey.sh "$1"
 
